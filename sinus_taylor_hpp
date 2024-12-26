@@ -3,17 +3,14 @@
 
 namespace sinus_taylor {
 
-    // Функции для вычисления синуса через ряд Тейлора
     float sin(float x);
     double sin(double x);
     long double sin(long double x);
 
-    // Функции для вывода результата
     void print(const float& x);
     void print(const double& x);
     void print(const long double& x);
 
-    // Обертка для вывода синуса
     template <typename T>
     void print_sin(T value) {
         print(value);
